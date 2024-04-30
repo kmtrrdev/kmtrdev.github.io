@@ -1,0 +1,115 @@
+    <!DOCTYPE html>
+    <html>
+    
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width = device-width ">
+      <title>t-shirt</title>
+      <link    rel="stylesheet"    href=" C:\Users\Moham\Desktop\Project\it\style.css" >
+    </head>
+    
+    <body class="bodyomarr">
+     
+      <div class="small-container single-product">
+        <div class="row">
+          <div class="col-2">
+          <img src="imges/t4.jpeg" width="100% "
+            id="productImg">
+          <div class="small-img-row">
+             <div class="small-img-col">
+               <img src="imges/t7.jpeg" width="100%"
+                 id="small-img1">
+             </div>
+            <div class="small-img-col">
+               <img src="imges/t9.jpeg" width="100%"
+                 id="small-img2">
+             </div>
+            <div class="small-img-col">
+               <img src="imges/t6.jpeg" width="100%"
+                 id="small-img3">
+             </div>
+            <div class="small-img-col">
+               <img src="imges/t5.jpeg" width="100%"
+                 id="small-img4">
+  
+  
+             </div>
+          </div>
+          </div>
+  
+  
+          
+        <div class="col-2">
+          <p class="p1">Home / T-shirts</p>
+          
+          <h1>  T-shirts be enjoy dudee  </h1>
+          <p class="p2">Buy 2 get 1 free</p>
+          <h4>$29.99</h4>
+          <select>
+            <option>select size</option>
+             <option>xxl</option>
+             <option>xl</option>
+             <option>large</option>
+             <option>medium</option>
+             <option>small</option>
+          </select>
+          <input type="number" value="1">
+          <a href="" class="btn">add to cart</a>
+          <h3 class="main">product details: <i class="fa fa=indent"></i></h3>
+          <p>When it comes to the art of clothing design, meticulous attention to product details is paramount. Every stitch, fabric choice, and embellishment plays a crucial role in shaping the final outcome of a garment. From haute couture to everyday wear, the design process involves a delicate balance of creativity, functionality, and craftsmanship.</p>
+  
+  
+           <table border="3" class="tab">
+             <caption><strong>To fit chest size </strong> </caption>
+             <tr>
+                <th>size</th>
+               <th>inches</th>
+                <th>cm</th>
+             </tr>
+             <tr>
+                <td>small</td>
+               <td>36-38</td>
+                <td>91-96</td>
+             </tr>
+             <tr>
+                <td>medium</td>
+               <td>38-40</td>
+                <td>96-101</td>
+             </tr>
+             <tr>
+                <td>large</td>
+               <td>40-42</td>
+                <td>96-101</td>
+             </tr>
+             <tr>
+                <td>xl</td>
+               <td>42-44</td>
+                <td>101-108</td>
+             </tr>
+             <tr>
+                <td>xxl</td>
+               <td>44-46</td>
+                <td>108-115</td>
+             </tr>
+           </table>
+        </div> 
+      </div>
+    </div>
+        
+        <script>
+        var productImg =document.getElementById("productImg");
+        var smallImg =document.getElementsByClassName("small-img-col");
+    
+        smallImg[0].onclick =function(){
+          productImg.src = smallImg[0].getElementsByTagName("img")[0].src;
+        }
+        smallImg[1].onclick =function(){
+          productImg.src = smallImg[1].getElementsByTagName("img")[0].src;
+        }
+        smallImg[2].onclick =function(){
+          productImg.src = smallImg[2].getElementsByTagName("img")[0].src;}
+        smallImg[3].onclick =function(){
+          productImg.src = smallImg[3].getElementsByTagName("img")[0].src;}
+        </script>
+    </body>
+    </html> 

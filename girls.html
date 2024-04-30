@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>kids</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">Anaka</a> </div>
+            <ul>
+                <li class="lifa"><a href="#">Home</a></li>
+                <li class="lifa"><a href="#">About</a></li>
+                <li class="lifa"><a href="#">contact</a></li>
+                <button class="buttomfa"><a herf="#">SignIn</a></button>
+                <button class="buttomfa"><a herf="#">SignUp</a></button>
+                
+            </ul>
+        </div>
+    </nav>
+    <div class="contain">
+        <div class="product">
+            <div class="gallery">
+                <img src="imges/5.jpeg" id="productimg">
+                <div class="controls">
+                    <span class="btnn active"></span>
+                    <span class="btnn"></span>
+                    <span class="btnn"></span>
+                </div>
+            </div>
+            <div class="details">
+                <b class="f">Front & Back printed Butterfly Girls Black Hoodie</b>
+                <h2 class="h">550L.E</h2>
+                <h3>30% OFF</h3>
+                <form>
+                    <div class="size-select">
+                        <p>Size</p>
+                        <label for="small">
+                            <input type="radio" name="size" id="small">
+                            <span>S</span>
+                        </label>
+                        <label for="medium">
+                            <input type="radio" name="size" id="medium">
+                            <span>M</span>
+                        </label>
+                        <label for="Large">
+                            <input type="radio" name="size" id="large">
+                            <span>L</span>
+                        </label>
+                        <label for="x-large">
+                            <input type="radio" name="size" id="x-large">
+                            <span>XL</span>
+                        </label>
+                    </div>
+
+                     <div class="color-select">
+                        <p>Color</p>
+                        <label for="red">
+                            <input type="radio" name="color" id="red">
+                            <span class="color-1"></span>
+                        </label>
+                        <label for="green">
+                            <input type="radio" name="color" id="green">
+                            <span class="color-2"></span>
+                        </label>
+                        <label for="blue">
+                            <input type="radio" name="color" id="blue">
+                            <span class="color-3"></span>
+                        </label>
+                        <label for="pin;">
+                            <input type="radio" name="color" id="pink">
+                            <span class="color-4"></span>
+                        </label>
+                     </div>
+                        <div class="quantity-select">
+                            <p>Quantity</p>
+                            <input type="number" value="1">
+                        </div>
+                           <button>Buy Now</button>
+
+
+
+                </form>
+                
+            </div>
+        </div>
+
+    </div>
+    
+
+     <script> 
+        let productImg = document.getElementById("productimg");
+ let btnn = document.getElementsByClassName("btnn");
+
+ btnn[0].onclick = function(){
+   productimg.src = "imges/5.jpeg";
+
+      for(bt of btnn){
+         bt.classlist.remove("active");
+              }
+    this.classList.add("active");
+ }
+ btnn[1].onclick = function(){
+  productimg.src="imges/7.jpeg";
+  for(bt of btnn){
+        bt.classList.remove("active");
+     }
+     this.classList.add("active");
+}
+ btnn[2].onclick = function(){
+   productimg.src="imges/9.jpeg";
+   for(bt of btnn){
+        bt.classList.remove("active");
+     }
+     this.classList.add("active");
+}
+     </script> 
+     <footer class="footfa">
+        <div class="footercontainer">
+            <div class="socialicons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footernav">
+                <ul>
+                    <li class="lifa"><a href="#">Home</a></li>
+                    <li class="lifa"><a href="#">News</a></li>
+                    <li class="lifa"><a href="#">About Us</a></li>
+                    <li class="lifa"><a href="#">Our Team</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <p>copyright &copy;2024 Designed by <span class="designer">farah</span></p>
+        </div>
+       </footer>
+    <script src="script.js"></script>
+</body>
+</html>

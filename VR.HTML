@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<br lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> top basic</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+ 
+    
+<nav>
+    <div class="logoo"> <a href="#">Anaka</a> </div>
+    <section id="theheader">
+<div>
+<ul id="navbar">
+    <li> <a href="#">HOME</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">products</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">sign in</a></li>
+<li><a href="#">sign up</a></li>
+<i class="fas fa-shopping-cart"></i>
+</ul>
+</div>
+    </section>
+    </nav>
+
+<br> 
+<br>
+<div class="flex-box">
+    <div class="left"> 
+        <div class="big-img"> 
+            <img src="imges/pink.jpeg">
+            </div>
+
+            
+        <div class="images">
+            <div class="small-img"> 
+                <img src="imges/pink.jpeg" onclick="showImg(this.src)">
+
+        </div>
+            <div class="small-img"> 
+            <img src="imges/black.jpeg" onclick="showImg(this.src)">
+
+        </div>
+            <div class="small-img">
+            <img src="imges/blue.jpeg" onclick="showImg(this.src)">
+
+        </div>
+        
+        <div class="small-img">
+            <img src="imges/green.jpeg" onclick="showImg(this.src)">
+
+        </div>
+        </div>
+    </div>
+    <br>
+     <div class="right">
+    <div class="prodname"> top basic for women</div> 
+    <br>
+    <div class="price"> price : 200.00 LE</div>
+    <br>
+    <div class=" sizes"> 
+        
+        <i> SIZES:</i> <button class="prodsize"> S </button> 
+            <button class="prodsize"> M </button>      <button class="prodsize"> L </button>      <button class="prodsize"> XL </button>
+            <br>
+            <br>
+            <div class=" colours"> 
+        
+                <i> colours:</i> <button class="prodcol"> white </button> 
+                    <button class="prodcol"> green </button>    <button class="prodcol"> black </button>      <button class="prodcol"> pink </button>      <button class="prodcol"> blue </button>     <button class="prodcol"> red </button>
+            </div>
+        
+            <br>
+            <br>
+            <br>
+    
+<style>
+    table, th, td {
+      border: 3px solid rgb(132, 154, 222);
+      border-collapse: collapse;
+    }
+    th, td {
+  background-color: white;
+}
+    </style>
+    <body>
+    
+    <!-- <h2>A basic HTML table</h2> -->
+    
+    <table style="width:100%">
+      <tr>
+        <th>SIZE</th>
+        <th>height</th>
+        <th>width</th>
+        <th>weight</th>
+      </tr>
+      <tr>
+        <th> S</th>
+        <td> 23Cm</td>
+        <td> 28Cm</td>
+        <td> 40  to  48 Kg</td>
+      </tr>
+      <tr>
+        <th>M</th>
+        <td>28Cm</td>
+        <td>32Cm</td>
+        <td>48  to  54 Kg</td>
+      </tr>
+      <tr>
+        <th> L</th>
+        <td>32Cm</td>
+        <td>36Cm</td>
+        <td>62  to  70 Kg </td>
+      </tr>
+      <tr>
+        <th>XL</th>
+        <td>36Cm</td>
+        <td>42Cm</td>
+        <td>70  to  76 Kg</td>
+      </tr>
+    </table>
+     </div>
+</div>
+</div>
+
+
+<script >
+      let bigImg = document.querySelector('.big-img img');
+ function showImg(pic){
+    bigImg.src = pic;
+ }
+</script>
+
+<footer class="footerp2">
+    <div class="gg">
+        <h2 class="hhh"> Links </h2>
+         <ul class="linkss">
+            <li><a href="#"> Home </a></li>
+           
+            <li><a href="#"> Services </a></li>
+            
+            <li><a href="#"> Contact Us </a></li>
+        </ul> 
+    </div>
+    <div class="gg">
+        <h2 class="jjj"> News Letter </h2>
+        <form action="" class="regist">
+            <input type="email" name="email" id="email" placeholder="Enter your email Address">
+            <button type="submit"> Subscibe Now </button>
+        </form>
+    </div>
+    <div class="gg">
+        <h2 class="klk"> Contact </h2>
+       
+        <ul class="social media">
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-whatsapp"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

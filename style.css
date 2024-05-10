@@ -91,27 +91,6 @@ a{
     color:aquamarine ;
 }
 
-
- 
-  
-  .home-text {
-    z-index: 1000;
-    padding: 0 150px;
-  }
-  
-  .home-text span {
-    color: white;
-    font-weight: 500;
-    text-transform: uppercase;
-  }
-  
-  .home-text h1 {
-    color: white;
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-  }
-  
 .hero{
     background-color: #171717;
     background-image:url("imges/home.jpg") ;
